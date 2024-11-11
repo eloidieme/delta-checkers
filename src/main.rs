@@ -1,9 +1,12 @@
 mod board;
 mod capture;
-
-use board::{Player, Position, BOARD_SIDE};
+mod moves;
+mod position;
+mod piece;
+mod player;
 
 use crate::board::Board;
+use crate::position::Position;
 
 fn main() {
     let board: Board = Board::new();

@@ -1,4 +1,8 @@
-use crate::board::{Board, Move, Player, Piece, Position, BOARD_SIDE}; 
+use crate::board::{Board, BOARD_SIDE};
+use crate::moves::Move;
+use crate::player::Player;
+use crate::position::Position;
+use crate::piece::Piece;
 
 pub struct CaptureSearch<'a> {
     board: &'a Board,
